@@ -1,0 +1,11 @@
+/* font file call css */
+
+@font-face {
+	font-family: 'Open-Sans';
+	src: url(OpenSans-Light.ttf) format('truetype');
+}
+
+body {
+	font-family:Open-Sans;
+	letter-spacing:1px;
+}

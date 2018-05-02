@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+	<TITLE>index</TITLE>
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<style type="text/css">
+	
+ 	a:link { color: black; text-decoration: none;}
+ 	a:visited { color: black; text-decoration: none;} 
+
+	body {
+		background:black;
+		margin:0px 0px;
+	}	
+
+	/*main*/
+	.MainContainer {
+		display:inline-block;
+		text-align:center;
+		background:black;
+		margin:0 auto;
+		width:100%;
+		height:820px;
+	}
+	.mainPic {
+		width:1200px;
+		height:650px;
+	}
+	.mainText {
+		display:inline-block;
+		color:white;
+		text-align:right;
+		vertical-align:middle;
+		width:1200px;
+		height:150px;
+		font-size:20px;
+	}
+
+	/*news*/
+	.NewsContainer {
+		position:relative;
+		background:#21212;
+		text-align:center;
+		margin:0 auto;
+		width:1200px;
+		height:650px;
+	}
+	.NewContainer-table {
+		border:hidden;
+		border-spacing:0px;
+		margin:0px;
+		display:inline-block;
+		width:1200px;
+		height:100%;
+	}
+	.NewsContainer-tr{
+		border:hidden;
+		border-spacing:0px;
+	}
+	.NewContainer-td-pic{
+		padding:0px 0px 0px 0px;
+		width:900px;
+		height:650px;
+	}
+	.NewContainer-td-text{
+		padding:0px 0px 0px 0px;
+		width:300px;
+		text-align:center;
+	}
+	.NewsElement {
+		display:none;
+	}
+	.NewsLabel {
+		display:inline-block;
+		color:white;
+		border-radius:5px;
+		cursor:pointer;
+		text-align:center;
+		vertical-align:middle;
+		line-height:162px;
+		font-size:20px;
+		background:#eee9e9;
+		background: linear-gradient(to bottom, #9E9E9E 0%, #050505 100%);
+		width:300px;
+		height:162px;
+	}
+	.firstPic,.secondPic,.thirdPic,.fourthPic{
+		display:block;
+		width:900px;
+		height:0px;
+		transition: height 0.6s;
+	}
+	#News1:checked~ .firstPic {
+		height:650px;
+	}
+	#News2:checked~ .secondPic {		
+		height:650px;
+	}
+	#News3:checked~ .thirdPic {		
+		height:650px;
+	}
+	#News4:checked~ .fourthPic {
+		height:650px;
+	}
+	.NewsLabel:hover {
+		background:#424242;
+		box-shadow:inset 10px 10px 20px 10px #000000;
+	}
+</style>
+</HEAD>
+<BODY>
+	<div id=topBackground>
+		<a href=index.html target=_self >WATCH COLLECTION</a>
+		<span style="font-size:10px;position:fixed;right:0px;top:30px">made by LDC</span>
+	</div>
+
+	<input type="checkbox" name="menu1Button" id="menu1Button">
+
+	<div class="menuContainer">
+		<ul>
+			<li><label for="menu1Button">BRAND</label></li>
+			<li><a href="Collection_Main.html" target=_self>COLLECTION</a></li>
+			<li>menu3</li>
+			<li>menu4</li>
+		</ul>
+	</div>
+
+	<div class="menu1Container">
+		<ul>
+			<li><a href="brand_tagheuer.html" target=_self>
+				<img src="pic/Brand/TAGHeuer.png" class="BrandPic"><br>TAGHeuer</li></a>
+			<li><a href="brand_hamilton.html" target=_self>
+				<img src="pic/Brand/Hamilton.png" class="BrandPic"><br>HAMILTON</li></a>
+			<li><a href="brand_Citizen.html" target=_self>
+				<img src="pic/Brand/citizen.png" class="BrandPic"><br>CITIZEN</li></a>
+			<li><a href="brand_seiko.html" target=_self>
+				<img src="pic/Brand/seiko.png" class="BrandPic"><br>SEIKO</li></a>
+		</ul>
+	</div>
+
+	<div class="MainContainer">
+		<img src="pic/main.png" class="mainPic">
+		<div class="mainText">FORGOT WATCH<br>FORGOT TIME</div>
+
+	</div>
+
+	<div class="newsContainer">
+		<table class="NewContainer-table">
+			<tr class="NewsContainer-tr">						
+				<td class="NewContainer-td-pic" rowspan=4>	
+					<input type=radio id="News1" name="News" class="NewsElement" checked="checked">
+					<input type=radio id="News2" name="News" class="NewsElement" value="2">
+					<input type=radio id="News3" name="News" class="NewsElement" value="3">
+					<input type=radio id="News4" name="News" class="NewsElement" value="4">	
+						<img src="pic/태그호이어 포뮬러1.jpg" class="firstPic">				
+						<img src="pic/해밀턴 재즈마스터.jpg" class="secondPic">
+						<img src="pic/시티즌 신문페.jpg" class="thirdPic">
+						<img src="pic/세이코 SNP152.jpg" class="fourthPic">
+				</td>
+				<td class="NewContainer-td-text"><label for="News1" class="NewsLabel">태그호이어 포뮬러1</label>
+				</td>
+			</tr>
+			<tr>
+				<td class="NewContainer-td-text"><label for="News2" class="NewsLabel">해밀턴 재즈마스터</label>
+				</td>
+			</tr>
+			<tr>
+				<td  class="NewContainer-td-text"><label for="News3" class="NewsLabel">시티즌 문페이즈</label>
+				</td>
+			</tr>
+			<tr>
+				<td  class="NewContainer-td-text"><label for="News4" class="NewsLabel">세이코 snp152</label>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	</BODY>
+</HTML>
