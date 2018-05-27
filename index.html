@@ -39,7 +39,6 @@
 	/*news*/
 	.NewsContainer {
 		position:relative;
-		background:#21212;
 		text-align:center;
 		margin:0 auto;
 		width:1200px;
@@ -107,8 +106,24 @@
 		box-shadow:inset 10px 10px 20px 10px #000000;
 	}
 </style>
+<script>
+	function newsToggle()
+	{
+		var element=document.getElementsByClassName("NewsElement");
+		var num=0;
+		for(var i=0;i<element.length;i++)
+		{
+			if(element[i].checked)
+				num=i;
+		}
+		if(num==3)
+			element[0].checked="checked";
+		else
+			element[++num].checked="checked";
+	}
+</script>
 </HEAD>
-<BODY>
+<BODY onload="setInterval('newsToggle()',3000)">
 	<div id=topBackground>
 		<a href=index.html target=_self >WATCH COLLECTION</a>
 		<span style="font-size:10px;position:fixed;right:0px;top:30px">made by LDC</span>
