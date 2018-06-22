@@ -3,9 +3,10 @@
 	<TITLE>index</TITLE>
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="css/basic.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery_ui/jquery-ui.css">
+    <script src="jquery_ui/external/jquery/jquery.js"></script>
+    <scrtip src="jquery_ui/jquery-ui.min.js"></scrtip>
+    <script src="jquery_ui/jquery-ui.js"></script>
 	<style type="text/css">
 	
  	a:link { color: black; text-decoration: none;}
@@ -184,7 +185,7 @@
 
   		$("#newWriteUp").on("click",function() {
   			$("#boardContainer table").append( "<tr>" + "<td id=index>" + boardindex + "</td>" +
-  				"<td id=subject>"+ "<label class=subjectClick>" + $("#newWriteSubject").val() +"</label>"+ "<div id=writeCon>" + $("#newWriteCon").val() + "</div>"+"</td>" +
+  				"<td id=subject>"+ "<label class=subjectClick>" + $("#newWriteSubject").val() +"</label>"+ "</td>" +
   				"<td id=writer>" + realID[realidindex] + "</td>" + "</tr>"  );
   			a[boardindex]=$("#newWriteSubject").val();
   			b[boardindex]=$("#newWriteCon").val();
